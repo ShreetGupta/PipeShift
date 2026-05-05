@@ -1,0 +1,22 @@
+/*
+  Hides the category / chips filter bar on YouTube's home feed.
+  Covers both the Polymer component and its inner wrapper so
+  the space is fully collapsed — no leftover gap.
+*/
+
+/* Main chip-bar component */
+ytd-feed-filter-chip-bar-renderer {
+  display: none !important;
+}
+
+/* Fallback: the inner chips wrapper used in some A/B layouts */
+#chips-wrapper,
+yt-chip-cloud-renderer,
+yt-chip-cloud-chip-renderer {
+  display: none !important;
+}
+
+/* Collapse the sticky header row that holds the bar — this is the black strip */
+#header.ytd-rich-grid-renderer {
+  display: none !important;
+}

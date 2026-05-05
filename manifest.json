@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Better YouTube",
+  "short_name": "Better YouTube",
+  "version": "2.6",
+  "description": "A no-nonsense YouTube enhancement: soft grey dark mode, side comments panel, and no category chips.",
+  "action": {
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "default_title": "Better YouTube is active"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["css/theme.css", "css/hide-chips.css"],
+      "js":  ["js/fullscreen.js", "js/hide-chips.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "css": ["css/side-comments.css"],
+      "js":  ["js/side-comments.js"]
+    }
+  ]
+}
