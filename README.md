@@ -1,6 +1,8 @@
 # Better YouTube
 
-A lightweight Chrome extension that fixes three annoyances on YouTube — no settings UI, no trackers, no bloat. Load it and forget it.
+<img src="icon128.png" width="80" align="right" alt="GreyTube icon"/>
+
+A lightweight Chrome extension that fixes three annoyances on YouTube — Pitch black theme, Comments panel position, Category bar.
 
 ---
 
