@@ -5,12 +5,12 @@
 
 /* ── YouTube's own CSS variables ── */
 html[dark] {
-  --yt-spec-base-background: #1a1a1a !important;
-  --yt-spec-raised-background: #262626 !important;
-  --yt-spec-menu-background: #262626 !important;
-  --yt-spec-badge-chip-background: #2c2c2c !important;
+  --yt-spec-base-background: #191919 !important;
+  --yt-spec-raised-background: #252525 !important;
+  --yt-spec-menu-background: #252525 !important;
+  --yt-spec-badge-chip-background: #2b2b2b !important;
   --yt-spec-10-percent-background: rgba(255, 255, 255, 0.08) !important;
-  --yt-spec-static-overlay-background-heavy: rgba(22, 22, 22, 0.9) !important;
+  --yt-spec-static-overlay-background-heavy: rgba(21, 21, 21, 0.9) !important;
 }
 
 /* ── Page shell ── */
@@ -18,13 +18,13 @@ html[dark] body,
 html[dark] ytd-app,
 html[dark] #page-manager,
 html[dark] ytd-page-manager {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 /* ── Top navigation bar ── */
 html[dark] #masthead-container,
 html[dark] ytd-masthead {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 /* ── Left sidebar ── */
@@ -32,17 +32,17 @@ html[dark] tp-yt-app-drawer,
 html[dark] #contentContainer,
 html[dark] ytd-guide-renderer,
 html[dark] ytd-mini-guide-renderer {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 /* ── Home / browse page ── */
 html[dark] ytd-browse,
 html[dark] ytd-two-column-browse-results-renderer {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 html[dark] ytd-rich-grid-renderer {
-  background: #1a1a1a !important;
+  background: #191919 !important;
   contain: content;
 }
 
@@ -52,25 +52,25 @@ html[dark] #primary,
 html[dark] #secondary,
 html[dark] #primary-inner,
 html[dark] #secondary-inner {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 /* ── Below video: title, info ── */
 html[dark] ytd-video-primary-info-renderer,
 html[dark] ytd-video-secondary-info-renderer,
 html[dark] ytd-watch-metadata {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 /* ── Comments ── */
 html[dark] ytd-comments {
-  background: #1d1d1d !important;
+  background: #1c1c1c !important;
 }
 
 /* ── Search results ── */
 html[dark] ytd-search,
 html[dark] ytd-section-list-renderer {
-  background: #1d1d1d !important;
+  background: #1c1c1c !important;
 }
 
 /* ── Menus and dropdowns ── */
@@ -78,7 +78,7 @@ html[dark] ytd-menu-popup-renderer,
 html[dark] ytd-multi-page-menu-renderer,
 html[dark] tp-yt-paper-dialog,
 html[dark] tp-yt-iron-dropdown .dropdown-content {
-  background: #262626 !important;
+  background: #252525 !important;
 }
 
 /* Filter chip bar is removed entirely by hide-chips.css */
@@ -86,50 +86,50 @@ html[dark] tp-yt-iron-dropdown .dropdown-content {
 /* ── Scrollbar (document-level only) ── */
 html[dark]::-webkit-scrollbar-track,
 html[dark] body::-webkit-scrollbar-track {
-  background: #1d1d1d !important;
+  background: #1c1c1c !important;
 }
 
 html[dark]::-webkit-scrollbar-thumb,
 html[dark] body::-webkit-scrollbar-thumb {
-  background: #383838 !important;
+  background: #373737 !important;
   border-radius: 4px;
 }
 
 html[dark]::-webkit-scrollbar-thumb:hover,
 html[dark] body::-webkit-scrollbar-thumb:hover {
-  background: #444444 !important;
+  background: #434343 !important;
 }
 
 /* ── SideComments integration ── */
 html[dark] #comments.sc-comments {
-  background: #1a1a1a !important;
+  background: #191919 !important;
   border-color: rgba(255, 255, 255, 0.09) !important;
 }
 
 html[dark] #comments.sc-comments ytd-comments-header-renderer {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 html[dark] #comments.sc-comments ytd-comment-thread-renderer,
 html[dark] #comments.sc-comments ytd-comment-renderer {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 /* Scrollbar inside sc-comments card */
 html[dark] #comments.sc-comments::-webkit-scrollbar-track {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 html[dark] #comments.sc-comments::-webkit-scrollbar-thumb {
-  background: #383838 !important;
+  background: #373737 !important;
   border-radius: 99px;
 }
 
 /* Secondary sidebar scroll area */
 html[dark].sc-active #secondary {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
 
 html[dark].sc-active #secondary::-webkit-scrollbar-track {
-  background: #1a1a1a !important;
+  background: #191919 !important;
 }
