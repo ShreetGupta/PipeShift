@@ -16,6 +16,7 @@ Only overrides background colours. Text, icons, and accent colours are left exac
 
 Also suppresses the floating popup bar that appears in fullscreen mode.
 
+
 **🦗 Side Comments Panel**
 
 On the watch page, the comments section is moved into the right sidebar so you can read comments without losing your place in the video.
@@ -25,6 +26,7 @@ On the watch page, the comments section is moved into the right sidebar so you c
 - Playlists are collapsed by default to give comments more room (you can still expand them)
 - Comments are lazy-loaded by YouTube, so the extension triggers a quick invisible scroll on page load to kick that off
 - Falls back gracefully on narrow viewports (below 1100px): layout reverts to YouTube's default single-column
+
 
 **🦗 Hide Category Bar**
 
