@@ -55,28 +55,6 @@ Store link:
 
 ---
 
-## File Structure
-
-```
-Better YouTube/
-├── manifest.json
-├── README.md
-├── icons/
-│   ├── icon16.png
-│   ├── icon48.png
-│   └── icon128.png
-├── css/
-│   ├── theme.css           # Grey dark mode overrides
-│   ├── side-comments.css   # Watch page layout + comments card
-│   └── hide-chips.css      # Category bar removal
-└── js/
-    ├── fullscreen.js       # Fullscreen popup suppression
-    ├── side-comments.js    # Comments relocation logic
-    └── hide-chips.js       # Category bar DOM observer
-```
-
----
-
 ## Notes
 
 - Requires YouTube's own dark mode to be enabled (the grey overrides only apply to `html[dark]`)
