@@ -9,6 +9,7 @@ A lightweight Chrome extension that fixes three annoyances on YouTube — Dark g
 ## FEATURES
 
 **🦗 Soft Grey Dark Mode**
+
 YouTube's built-in dark mode uses near-black (`#0f0f0f`). Better YouTube replaces it with a softer grey (`#1c1c1c`) across every surface — nav bar, sidebar, watch page, menus, search results, scrollbars. Easier on the eyes for long sessions.
 
 Only overrides background colours. Text, icons, and accent colours are left exactly as YouTube sets them.
@@ -16,6 +17,7 @@ Only overrides background colours. Text, icons, and accent colours are left exac
 Also suppresses the floating popup bar that appears in fullscreen mode.
 
 **🦗 Side Comments Panel**
+
 On the watch page, the comments section is moved into the right sidebar so you can read comments without losing your place in the video.
 
 - Comments sit above the related videos in a scrollable card
@@ -25,6 +27,7 @@ On the watch page, the comments section is moved into the right sidebar so you c
 - Falls back gracefully on narrow viewports (below 1100px): layout reverts to YouTube's default single-column
 
 **🦗 Hide Category Bar**
+
 The chips/category filter bar on the home feed (`All`, `Music`, `Gaming`, etc.) is removed. The bar adds no value if you rely on subscriptions or search, and its sticky positioning eats vertical space.
 
 Removed via both CSS and a DOM observer so it stays gone even after YouTube's SPA re-renders it on navigation.
