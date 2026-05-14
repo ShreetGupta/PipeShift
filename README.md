@@ -32,7 +32,6 @@ Removed via both CSS and a DOM observer so it stays gone even after YouTube's SP
 ---
 
 ## Install
-
 You can load it manually in any browser and It is also available in Firefox addon store.
 
 **Manual laoding Steps**:
@@ -44,6 +43,7 @@ You can load it manually in any browser and It is also available in Firefox addo
 
 That's it. The extension activates automatically on `youtube.com`.
 
+Store link:
 [![Firefox Add-ons](https://img.shields.io/amo/v/perfectyt)](https://addons.mozilla.org/en-US/firefox/addon/perfectyt/)
 
 ---
