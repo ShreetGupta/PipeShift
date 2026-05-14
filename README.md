@@ -33,7 +33,7 @@ For updating you can just replace the folder, browser will load it automatically
 
 Store link:
 
-[![Firefox Add-ons](https://img.shields.io/amo/v/perfectyt)](https://addons.mozilla.org/en-US/firefox/addon/perfectyt/)
+[![Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/perfectyt/)
 
 ---
 
