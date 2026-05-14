@@ -2,7 +2,7 @@
 
 <img src="icons/icon128.png" width="80" align="right" alt="BetterYouTube icon"/>
 
-A lightweight Chrome extension that fixes three annoyances on YouTube — Dark grey theme, Side comments panel, Hides category chips.
+A lightweight Chrome extension that fixes three annoyances on YouTube — Replacing the harsh pitch black with Dark grey theme, Side comments panel, Hides category chips.
 
 ---
 
