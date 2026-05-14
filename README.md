@@ -35,13 +35,16 @@ Removed via both CSS and a DOM observer so it stays gone even after YouTube's SP
 You can load it manually in any browser and It is also available in Firefox addon store.
 
 **Manual loading Steps**:
-1. Download this repo as zip and extract it.
+1. Click on the green Code button and click on the download zip, then extract that zip in any location you want the extension to be.
 2. Go to your browser's extensions page.
 3. Enable **Developer mode** (toggle, top-right)
 4. Click **Load unpacked**
 5. Select the `Better YouTube` folder
 
 That's it. The extension activates automatically on `youtube.com`.
+Make sure not to delete the folder or the extension will be removed.
+Ignore the reload button that appears in the extensions page.
+For updating you can just replace the folder, browser will load it automatically if folder name and path is not changed.
 
 Store link:
 
