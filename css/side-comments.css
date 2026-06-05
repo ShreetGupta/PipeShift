@@ -69,7 +69,6 @@
   scrollbar-color: var(--sc-border) transparent !important;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .08) !important;
   animation: sc-in 200ms cubic-bezier(.4, 0, .2, 1) both;
-  position: relative !important;
 }
 
 .sc-active #comments.sc-comments::-webkit-scrollbar {
@@ -93,54 +92,6 @@
   }
 }
 
-/* ── Loading spinner (shown until comments arrive) ── */
-.sc-active #comments.sc-comments:not(.sc-loaded)::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 10;
-  background: var(--sc-surface);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sc-active #comments.sc-comments:not(.sc-loaded)::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 11;
-  width: 28px;
-  height: 28px;
-  margin: -14px 0 0 -14px;
-  border: 3px solid var(--sc-border);
-  border-top-color: var(--yt-spec-text-primary, #f1f1f1);
-  border-radius: 50%;
-  animation: sc-spin .8s linear infinite;
-}
-
-@keyframes sc-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Hide YouTube's native skeletons / ghost cards inside comments panel */
-.sc-active #comments.sc-comments:not(.sc-loaded) #ghost-cards,
-.sc-active #comments.sc-comments:not(.sc-loaded) ytd-comment-skeleton-renderer,
-.sc-active #comments.sc-comments:not(.sc-loaded) #header ytd-continuation-item-renderer,
-.sc-active #comments.sc-comments:not(.sc-loaded)>#sections>ytd-item-section-renderer>#contents>ytd-continuation-item-renderer {
-  display: none !important;
-}
-
-/* Also hide skeletons AFTER comments have loaded — prevents them
-   from flashing when YouTube re-renders during player mode changes
-   (miniplayer ↔ expanded, theater toggle, etc.) */
-.sc-active #comments.sc-comments.sc-loaded #ghost-cards,
-.sc-active #comments.sc-comments.sc-loaded ytd-comment-skeleton-renderer {
-  display: none !important;
-}
 
 /* Strip YouTube's internal top spacing */
 .sc-active #comments.sc-comments>#sections,
@@ -187,19 +138,6 @@
   max-width: 100% !important;
 }
 
-/* Collapse "load more" spinners in related videos so they take
-   zero visual space.  Videos still load via infinite scroll —
-   the 1px element triggers YouTube's IntersectionObserver — but
-   appear seamlessly without any spinner gap between batches. */
-.sc-active ytd-watch-next-secondary-results-renderer ytd-continuation-item-renderer {
-  height: 1px !important;
-  min-height: 0 !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: hidden !important;
-  opacity: 0 !important;
-  pointer-events: none !important;
-}
 
 /* ── Dark mode ── */
 html[dark] {

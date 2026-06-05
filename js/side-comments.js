@@ -11,7 +11,7 @@ let interval = null;
 let activated = false;
 let nudgeTmr = null;
 let playlistObs = null;
-let loadedObs = null;
+
 let lastVideoUrl = null;
 
 const isWatch = () => location.href.includes(WATCH);
@@ -26,20 +26,11 @@ function commentsReady() {
   return c && !c.hasAttribute('hidden') && c.innerHTML.length > 100;
 }
 
-function cleanup(resetLoaded = false) {
+function cleanup() {
   obs1?.disconnect(); obs1 = null;
   playlistObs?.disconnect(); playlistObs = null;
-  loadedObs?.disconnect(); loadedObs = null;
   if (interval) { clearInterval(interval); interval = null; }
   activated = false;
-  if (resetLoaded) {
-    const c = document.getElementById('comments');
-    if (c) {
-      c.classList.remove('sc-loaded');
-      // Clear old comment threads so stale content doesn't trigger premature sc-loaded
-      c.querySelectorAll('ytd-comment-thread-renderer').forEach(el => el.remove());
-    }
-  }
 }
 
 function forceCommentsLoad() {
@@ -89,7 +80,6 @@ function detect() {
   if (!isWatch()) return;
   watchAndCollapsePlaylist();
 
-  // Apply layout + spinner classes early so our spinner shows instead of YouTube's skeletons
   const c = document.getElementById('comments');
   const secInner = document.querySelector('#secondary-inner');
   if (c && secInner) {
@@ -143,20 +133,6 @@ function activate() {
   secInner.prepend(comments);
   comments.classList.add('sc-comments');
   nudge();
-
-  // Mark loaded only once real comment threads appear
-  if (comments.querySelector('ytd-comment-thread-renderer')) {
-    comments.classList.add('sc-loaded');
-  } else {
-    loadedObs = new MutationObserver(() => {
-      if (comments.querySelector('ytd-comment-thread-renderer')) {
-        comments.classList.add('sc-loaded');
-        loadedObs.disconnect();
-        loadedObs = null;
-      }
-    });
-    loadedObs.observe(comments, { childList: true, subtree: true });
-  }
 }
 
 function handleSameVideoLayout() {
@@ -172,10 +148,6 @@ function handleSameVideoLayout() {
   }
   comments.classList.add('sc-comments');
 
-  // Re-apply loaded state if comment threads still exist
-  if (!comments.classList.contains('sc-loaded') && comments.querySelector('ytd-comment-thread-renderer')) {
-    comments.classList.add('sc-loaded');
-  }
 
   if (!activated) {
     // Was deactivated (e.g. returning from miniplayer) — re-detect
@@ -189,7 +161,7 @@ document.addEventListener('yt-navigate-finish', () => {
   if (!isWatch()) {
     document.documentElement.classList.remove('sc-active');
     document.getElementById('comments')?.classList.remove('sc-comments');
-    cleanup();           // soft — don't remove sc-loaded, don't null lastVideoUrl
+    cleanup();
     return;
   }
   const key = currentVideoKey();
@@ -198,7 +170,7 @@ document.addEventListener('yt-navigate-finish', () => {
     return;
   }
   lastVideoUrl = key;
-  cleanup(true);        // hard — remove sc-loaded for the new video
+  cleanup();
   detect();
 });
 
