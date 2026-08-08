@@ -49,7 +49,9 @@ The homepage feed was a specific focus. YouTube's infinite scroll continuously i
 
 ## Install
 
-**Firefox** — Install from Mozilla Addons store.
+**Firefox**
+
+[![Get the Add-on for Firefox](icons/get-firefox-addon.svg)](https://addons.mozilla.org/en-US/firefox/addon/pipeshift/)
 
 **Chromium browsers** (Chrome, Brave, Edge, Vivaldi):
 1. Download and extract the repository
