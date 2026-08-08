@@ -6,8 +6,6 @@ A browser extension that rethinks three parts of the YouTube experience — repl
 
 No permissions beyond `youtube.com`. No background process, no storage, no network requests. Just CSS and scoped DOM work that runs only where it's needed.
 
-Available on [Firefox Add-ons](https://addons.mozilla.org) · Chrome Web Store *(coming soon)*
-
 ---
 
 ## What it does
@@ -51,7 +49,7 @@ The homepage feed was a specific focus. YouTube's infinite scroll continuously i
 
 ## Install
 
-**Firefox** — Install from [Firefox Add-ons](https://addons.mozilla.org).
+**Firefox** — Install from Mozilla Addons store.
 
 **Chromium browsers** (Chrome, Brave, Edge, Vivaldi):
 1. Download and extract the repository
