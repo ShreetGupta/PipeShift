@@ -101,6 +101,10 @@ The entire extension runs as content scripts injected into `youtube.com` — not
 ### Firefox Add-on Store
 PipeShift is available on the **Mozilla Add-ons Store** — search for "PipeShift" or install directly from your Firefox browser.
 
+<p align="center">
+  <a href="https://addons.mozilla.org/en-US/firefox/addon/pipeshift/"><img src="icons/get-firefox-addon.svg" alt="Get the Add-on for Firefox"/></a>
+</p>
+
 ### Manual Installation (Any Chromium Browser)
 
 1. **Download** — Click the green **Code** button → **Download ZIP** → Extract to a permanent location
