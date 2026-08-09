@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "PipeShift",
   "short_name": "PipeShift",
-  "version": "2.9.5",
+  "version": "2.9.8",
   "description": "PipeShift \u2014 a no-nonsense YouTube enhancement: soft grey dark mode, side comments panel, and no category chips.",
   "browser_specific_settings": {
     "gecko": {
