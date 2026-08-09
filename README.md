@@ -16,7 +16,7 @@
 <p align="center">
   <a href="#install"><img src="https://img.shields.io/badge/Manifest-V3-4caf50?style=flat-square&logo=googlechrome&logoColor=white" alt="Manifest V3"/></a>
   <a href="#install"><img src="https://img.shields.io/badge/Firefox-Add--on-FF7139?style=flat-square&logo=firefoxbrowser&logoColor=white" alt="Firefox Add-on"/></a>
-  <img src="https://img.shields.io/badge/Version-2.9.5-blue?style=flat-square" alt="Version 2.9.5"/>
+  <img src="https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/ShreetGupta/PipeShift/main/manifest.json&label=Version&query=%24.version&color=blue&style=flat-square" alt="Version"/>
   <img src="https://img.shields.io/badge/Permissions-None-brightgreen?style=flat-square" alt="Zero Permissions"/>
   <img src="https://img.shields.io/badge/License-Open%20Source-8A2BE2?style=flat-square" alt="License"/>
 </p>
